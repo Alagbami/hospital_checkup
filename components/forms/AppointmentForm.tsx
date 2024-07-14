@@ -190,8 +190,8 @@ export const AppointmentForm = ({
                 fieldType={FormFieldType.TEXTAREA}
                 control={form.control}
                 name="note"
-                label="Comments/notes"
-                placeholder="Prefer afternoon appointments, if possible"
+                label="Comments/notes and Phone number"
+                placeholder="Please do not forget to place your phone number"
                 disabled={type === "schedule"}
               />
             </div>
@@ -204,7 +204,7 @@ export const AppointmentForm = ({
             control={form.control}
             name="cancellationReason"
             label="Reason for cancellation"
-            placeholder="Urgent meeting came up"
+            placeholder="Give a valid reason for patient appointment cancellation"
           />
         )}
 

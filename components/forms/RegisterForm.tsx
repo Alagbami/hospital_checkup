@@ -105,7 +105,9 @@ const RegisterForm = ({ user }: { user: User }) => {
       >
         <section className="space-y-4">
           <h1 className="header">Welcome 👋</h1>
-          <p className="text-dark-700">Let us know more about yourself.</p>
+          <p className="text-dark-700">
+            Please kindly fill the form and let us know more about yourself.
+          </p>
         </section>
 
         <section className="space-y-6">
@@ -119,7 +121,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="name"
-            placeholder="John Doe"
+            placeholder="Your fullname here.."
             iconSrc="/assets/icons/user.svg"
             iconAlt="user"
           />
@@ -131,7 +133,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="email"
               label="Email address"
-              placeholder="johndoe@gmail.com"
+              placeholder="Your email here..."
               iconSrc="/assets/icons/email.svg"
               iconAlt="email"
             />
@@ -141,7 +143,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="phone"
               label="Phone Number"
-              placeholder="(555) 123-4567"
+              placeholder="Input a valid phone number"
             />
           </div>
 
@@ -187,7 +189,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="address"
               label="Address"
-              placeholder="14 street, New york, NY - 5101"
+              placeholder=" Kindly input your Home|Office address here"
             />
 
             <CustomFormField
@@ -195,7 +197,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="occupation"
               label="Occupation"
-              placeholder=" Software Engineer"
+              placeholder="e.g Banker | Trader | Entrepreneur"
             />
           </div>
 
@@ -206,14 +208,14 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="emergencyContactName"
               label="Emergency contact name"
-              placeholder="Guardian's name"
+              placeholder="e.g Parent | Spouse | Guardian's name"
             />
 
             <CustomFormField
               fieldType={FormFieldType.PHONE_INPUT}
               control={form.control}
               name="emergencyContactNumber"
-              label="Emergency contact number"
+              label="Emergency contact phone number"
               placeholder="(555) 123-4567"
             />
           </div>
@@ -254,16 +256,16 @@ const RegisterForm = ({ user }: { user: User }) => {
               fieldType={FormFieldType.INPUT}
               control={form.control}
               name="insuranceProvider"
-              label="Insurance provider"
-              placeholder="BlueCross BlueShield"
+              label="Insurance | HMO provider"
+              placeholder="MetroHealth | Avon"
             />
 
             <CustomFormField
               fieldType={FormFieldType.INPUT}
               control={form.control}
               name="insurancePolicyNumber"
-              label="Insurance policy number"
-              placeholder="ABC123456789"
+              label="Insurance | HMO policy number"
+              placeholder="ABC12345XZY"
             />
           </div>
 
@@ -274,7 +276,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="allergies"
               label="Allergies (if any)"
-              placeholder="Peanuts, Penicillin, Pollen"
+              placeholder="e.g Peanuts, Smoking, Drug-allergy"
             />
 
             <CustomFormField
@@ -282,7 +284,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="currentMedication"
               label="Current medications"
-              placeholder="Ibuprofen 200mg, Levothyroxine 50mcg"
+              placeholder="Asthma, Depression, Levothyroxine 50mcg"
             />
           </div>
 
@@ -301,7 +303,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="pastMedicalHistory"
               label="Past medical history"
-              placeholder="Appendectomy in 2015, Asthma diagnosis in childhood"
+              placeholder="mental health in 2017, Asthma diagnosis in childhood"
             />
           </div>
         </section>
